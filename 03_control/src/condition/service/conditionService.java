@@ -142,15 +142,19 @@ public class conditionService {
 		 System.out.printf("%s의 최종 점수 : %.1f점\n",name, score);
 		 
 		 String rating;
-		 switch((int)score / 5) {
+		 // Java 지역변수는 초기화 안되면 사용 불가
+		 // (int)sum/10
+		 // - sum을 먼저 int로 강제 형변환 후 10으로 나눔
+		 switch((int)score / 5) { // switch문  () 내에는 정수/문자열 작성 가능
+		 // 하나의 case에 여러 경우를, 기호를 이용해서 작성 가능
 		 case 20, 19: rating = "A+"; break;
-		 case 18: rating = "A"; break;
-		 case 17: rating = "B+"; break;
-		 case 16: rating = "B"; break;
-		 case 15: rating = "C+"; break;
-		 case 14: rating = "C"; break;
-		 case 13: rating = "D+"; break;
-		 case 12: rating = "D"; break;
+		 case 18 : rating = "A"; break;
+		 case 17 : rating = "B+"; break;
+		 case 16 : rating = "B"; break;
+		 case 15 : rating = "C+"; break;
+		 case 14 : rating = "C"; break;
+		 case 13 : rating = "D+"; break;
+		 case 12 : rating = "D"; break;
 		 default : rating = "F";
 		 }
 		 System.out.print("성적 : " + rating);
