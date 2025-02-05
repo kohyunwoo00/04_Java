@@ -7,7 +7,7 @@ public class PolymorphismRun {
 		
 		PolymorphismService service = new PolymorphismService();
 		
-		service.test4(); // Child, Parent, Object 순서로 출력
+		service.test5(); // Child, Parent, Object 순서로 출력
 		
 		// 실행 : ctrl + f11
 		// 디버그 : f11
